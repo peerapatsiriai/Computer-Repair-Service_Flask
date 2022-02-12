@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V01</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="static/table/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/table/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/table/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/table/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/table/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/table/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/table/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/table/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Date</th>
+								<th class="column2">Order ID</th>
+								<th class="column3">Name</th>
+								<th class="column4">LastName</th>
+								<th class="column5">Images</th>
+								<th class="column6">Content</th>
+							</tr>
+						</thead>
+						<tbody>
+								{% for row in datas %}
+								<tr>
+									<td class="column1">{{ row.8 }}</td>
+									<td class="column2">{{ row.0 }}</td>
+									<td class="column3">{{ row.2 }}</td>
+									<td class="column4">{{ row.3 }}</td>
+									<td class="column5"><img src="{{ row.5 }}" alt="" width="50" height="50"></td>
+									<td class="column6">{{ row.4 }}</td>
+								</tr>
+								{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="static/table/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/table/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/table/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/table/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="sstatic/table/js/main.js"></script>
+
+</body>
+</html>
